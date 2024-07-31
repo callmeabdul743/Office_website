@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: #627254;
+    height: 8vh;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items:center ;
+    font-size: 19px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header li{
+    padding: 15px 10px 15px 10px;
+}
+header li:hover{
+    color:rgb(183, 186, 186);
+    cursor: pointer;
+}
+footer{
+    background-color: #76885B;
+    color:white;
+    position: static;
+    bottom: 0px;
+    display: flex;
+    height: 7vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    display: flex;
+    height: auto;
+}
+aside{
+    width: 500px;
+    padding: 20px;
+    background-color: #B0C5A4;
+    color: white;
+}
+aside ul{
+    list-style: none;
+}
+aside ul li:hover{
+    color:#627254;
+    cursor: pointer;
+}
+aside ul li{
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+}
+aside img{
+    width: 100%;
+    height: 50vh;
+    margin: 20px 0 0 0 ;
+}
+article{
+    background-color: #EEEEEE;
+    padding: 15px;
+}
+#line{
+    border:2px solid #76885B;
+    width: 100%;
+}
+.main1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.box{
+    padding: 10px;
+    background-color: #DDDDDD;
+    margin: 10px auto;
+    box-sizing: border-box;
+    flex-basis: 32%;
+    max-width: 370px;
+}
+.imga img{
+    width: 100%;
+}
+a{
+    border: 2px solid #627254;
+    background-color: #76885B;
+    color: white;
+    text-decoration: none;
+    width:80px;
+    padding: 5px;
+    display: block;
+    margin:10px 0;
+}
+a:hover{
+    background-color: #dddddd;
+    color: #76885B;
+}
+.heading{
+    height: 95px;
+    margin-top: 10px;
+}
+.heading p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    margin-top: 5px;
+}
+@media screen and (max-width:1465px) {
+    .main1{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width:1030px) {
+    .main1{
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+    article{
+        width: 70%;
+    }
+    aside{
+        width: 30%;
+    }
+}
+@media screen and (max-width:475px) {
+    header{
+        display: block;
+    }
+}
